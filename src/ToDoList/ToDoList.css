@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nunito";
+}
 body {
-  font-family: "Nunito";
   margin: 100px;
   height: 100%;
   display: flex;
   justify-content: center;
-  background-repeat: ;
+  /* background-repeat: ; */
+
   background: hsla(153, 100%, 82%, 1);
 
   background: linear-gradient(
@@ -14,36 +20,66 @@ body {
   );
 }
 .todo-container {
-  color: #ffffff;
-  border-radius: 10px;
   display: flex;
-  width: 400px;
+  color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  max-width: 700px;
+
   height: auto;
+  border-radius: 20px;
   background-color: #ffa69e;
   box-shadow: cornflowerblue;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+.header {
+  border-radius: 20px 20px 0px 0px;
+  height: 50px;
+  width: 300px;
+  background-color: #ff686b;
+  font-size: 30px;
+  text-align: center;
+  overflow: hidden;
+}
 div {
   flex-direction: column;
   align-items: center;
 }
-form {
-  border-radius: 10px;
-}
-button {
-  border-radius: 50px;
-  background-color: #a5ffd6;
-}
 .delete {
+  transition: 0.4s;
   border-radius: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #ff686b;
+  opacity: 0.7;
+}
+.delete:hover {
+  opacity: 1;
+}
+.tick {
+  transition: 0.4s;
+  background-color: #a5ffd6;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+}
+.tick:hover {
+  opacity: 1;
 }
 
-.line-through {
-  color: #a5ffd6;
+input {
+  width: 300px;
+  height: 50px;
+  background-color: whitesmoke;
+  font-size: 20px;
 }
-
-.header {
-  font-size: 40px;
+input:focus {
+  outline-width: 0;
+  border-style: solid;
+}
+.tasks {
+  text-align: right;
+  font-size: 20px;
 }

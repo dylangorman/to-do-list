@@ -1,6 +1,7 @@
 // ATTEMPT 2 WITH RESEARCH AND ASSISTANCE
+import React from "react";
 import { useState, useEffect } from "react";
-import "./ToDoList.css";
+import "./to-do-list.css";
 
 const Task = ({ task, index, completeTask, removeTask }) => {
   return (
